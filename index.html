@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco BICE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="content">
-            <h1>¡Lo sentimos!</h1>
-            <h2>No podemos completar la operación.</h2>
-            <h3>Error ::RAY_ID:: - Entrada incorrecta</h3>
-            <h4>Puedes intentar lo siguiente:</h4>
-            <table class="main-table">
-                <tr>
-                    <td><img width="44" height="57" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAA5CAYAAABNn8kpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNjJFRDk2REEyRTYxMUU3OTcxQkMwNUVDNkZEM0FGQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNjJFRDk2RUEyRTYxMUU3OTcxQkMwNUVDNkZEM0FGQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA2MkVEOTZCQTJFNjExRTc5NzFCQzA1RUM2RkQzQUZDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA2MkVEOTZDQTJFNjExRTc5NzFCQzA1RUM2RkQzQUZDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ZyZE+QAABMxJREFUeNrMWnuM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" /></td>
-                    <td>
-                        <ul>
-                            <li><b>Verificar</b> que la dirección web (URL) es correcta.</li>
-                            <li><b>Revisar</b> que los datos ingresados son válidos.</li>
-                            <li><b>Intentar</b> de nuevo más tarde.</li>
-                            <li><b>Contactar</b> con nuestro servicio de atención al cliente.</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+    <div class="main-container">
+        <div class="section white-background">
+            <div class="content">
+                <h1>¡Lo sentimos!</h1>
+                <h2>No podemos completar la operación.</h2>
+                <h3>Error ::RAY_ID:: - Entrada incorrecta</h3>
+                <h4>Puedes intentar lo siguiente:</h4>
+                <table>
+                    <tr>
+                        <td><img src="https://multimedia.bice.cl/static/telefono.png" alt="Teléfono"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contactar</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Ayúdanos a mejorar y avísanos si consideras que esta página o directorio no debiera estar presente.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="button-container">
+                                <a href="https://banco.bice.cl/personas" target="_top">Volver al Home</a>
+                            </div>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="section gray-background">
+            <div class="content">
+                <table>
+                    <tr>
+                        <td><b>Emergencias bancarias:</b><br>800 33 0911<br>Desde celulares: (02) 2692 2400</td>
+                        <td><b>Desde el exterior:</b><br>Canadá y EE.UU.:1-800-847 2911<br>Resto del mundo: 1-410-581-9754</td>
+                        <td><b>Mesa Ayuda Internet:</b><br>600 400 1000<br>Desde celulares: (02) 2692 2911</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="section white-background">
+            <div class="content">
+                <h5>Dirección IP: ::CLIENT_IP:: - RayID: ::RAY_ID::</h5>
+            </div>
         </div>
     </div>
 </body>
-
 </html>
